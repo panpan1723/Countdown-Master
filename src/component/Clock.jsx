@@ -51,6 +51,7 @@ export default function Clock() {
         <input
           type="number"
           value={minutes}
+          min={0}
           onChange={(e) => {
             setMinutes(e.target.value);
           }}
@@ -61,6 +62,7 @@ export default function Clock() {
         <input
           type="number"
           value={seconds}
+          min={0}
           onChange={(e) => {
             setSeconds(e.target.value);
           }}
